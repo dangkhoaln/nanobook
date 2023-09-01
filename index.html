@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nanobook</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="title">Nanobook</div>
+    <button class="create-book">NEW BOOK</button>
+    <dialog class="create-dialog">
+        <form method="dialog">
+            <label for="title">Title:</label>
+            <input id="title" type="text" placeholder="Le Petit Prince">
+            <label for="author">Author:</label>
+            <input id="author" type="text" placeholder="Antoine de Saint-Exupéry">
+            <label for="year">Year:</label>
+            <input id="year" type="number" placeholder="1945">
+            <button type="submit">Add</button>
+        </form>
+    </dialog>
+    <ul class="booklist">
+    </ul>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
