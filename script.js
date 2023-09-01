@@ -35,6 +35,8 @@ function renderBook(i) {
     bookElement.className = 'book';
     // Book id
     bookElement.dataset.key = i;
+    // Book read status
+    bookElement.dataset.read = myLibrary[i].haveRead;  
     // Book info
     const bookInfoElement = document.createElement('ul');
     // Book name
@@ -57,7 +59,7 @@ function renderBook(i) {
     // Read button
     const bookRemoveButton = document.createElement('button');
     bookRemoveButton.className = 'book_remove';
-    bookRemoveButton.textContent = 'X';
+    bookRemoveButton.textContent = "×";
     bookRemoveButton.addEventListener('click', removeBookHandler);
     // Assemble
     bookInfoElement.append(bookNameElement, bookRemoveButton, bookAuthorElement, bookYearElement, bookReadButton);

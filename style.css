@@ -25,6 +25,8 @@ button {
 
 button:hover {
     border: 1px solid rgb(93, 93, 93);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .title {
@@ -70,4 +72,15 @@ button:hover {
 .book_remove {
     width: 40px;
     height: 40px;
+    font-size: 2rem;
+}
+
+.book_remove:hover {
+    background-color: rgb(255, 118, 118);
+    color: white;
+}
+
+[data-read = "true"] .book_read {
+    background-color: rgb(33, 205, 33);
+    color: white;
 }
